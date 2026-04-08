@@ -1,518 +1,596 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Свадьба Владислава и Дианы</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Свадебный сайт Владислава и Дианы" />
-	<meta name="keywords" content="свадьба, свадебный сайт, любовь, торжество" />
-	<meta name="author" content="TC Digital" />
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадьба Влада и Дианы — 09 сентября 2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Свадьба Владислава и Дианы"/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content="Свадьба"/>
-	<meta property="og:description" content="Приглашение на свадьбу"/>
-	<meta name="twitter:title" content="Свадьба Владислава и Дианы" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fdf8f3;
+      color: #4a3f35;
+      overflow-x: hidden;
+    }
 
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    /* ── HERO ── */
+    .wc-hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, #fdf0e8 0%, #fdf8f3 100%);
+    }
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    .wc-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(218,165,105,.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    .petals-top {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 180px;
+      pointer-events: none; overflow: hidden;
+    }
 
-	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+    .petal {
+      position: absolute; top: -30px;
+      width: 12px; height: 18px;
+      border-radius: 50% 50% 50% 0;
+      opacity: 0;
+      animation: fall linear infinite;
+    }
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+    @keyframes fall {
+      0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+      10%  { opacity: .7; }
+      90%  { opacity: .5; }
+      100% { transform: translateY(220px) rotate(360deg); opacity: 0; }
+    }
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+    .wc-tag {
+      display: inline-block;
+      font-size: 10px; letter-spacing: .25em; text-transform: uppercase;
+      color: #b8896a;
+      margin-bottom: 28px;
+      animation: fadeUp .8s ease both .1s;
+    }
 
-	</head>
-	<body>
+    .wc-names {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(52px, 10vw, 88px);
+      font-weight: 300;
+      line-height: 1.05;
+      color: #3a2e26;
+      animation: fadeUp .9s ease both .25s;
+    }
 
-	<div class="fh5co-loader"></div>
+    .wc-names .amp {
+      font-style: italic;
+      color: #c4906b;
+      display: block;
+      font-size: .55em;
+      line-height: 1.2;
+      margin: 4px 0;
+    }
 
-	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Свадьба<strong>.</strong></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="index.html">Главная</a></li>
-						<li><a href="about.html">История</a></li>
-						<li><a href="contact.html">Контакты</a></li>
-						<li><a href="gallery.html">Галерея</a></li>
-					</ul>
-				</div>
-			</div>
+    .wc-divider {
+      margin: 28px auto 24px;
+      width: 80px; height: 1px;
+      background: linear-gradient(90deg, transparent, #c4906b, transparent);
+      animation: scaleIn .8s ease both .45s;
+    }
 
-		</div>
-	</nav>
+    @keyframes scaleIn {
+      from { transform: scaleX(0); opacity: 0; }
+      to   { transform: scaleX(1); opacity: 1; }
+    }
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Владислав &amp; Диана</h1>
-							<h2>Мы Вступаем в Брак</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#fh5co-started" class="btn btn-default btn-sm">Сохранить дату</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+    .wc-date {
+      font-size: 13px; letter-spacing: .18em; text-transform: uppercase;
+      color: #7a6558;
+      animation: fadeUp .8s ease both .55s;
+    }
 
-	<div id="fh5co-couple">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Привет!</h2>
-					<h3>Июль 2027 г., Ташкент, Узбекистан</h3>
-					<p>Мы приглашаем вас отпраздновать нашу свадьбу</p>
-				</div>
-			</div>
-			<div class="couple-wrap animate-box">
-				<div class="couple-half">
-					<div class="groom">
-						<img src="images/groom.jpg" alt="жених" class="img-responsive">
-					</div>
-					<div class="desc-groom">
-						<h3>Владислав</h3>
-						<p>Добрый, надежный и преданный. Владислав - это человек, который готов подарить всю свою любовь и заботу своей половинке.</p>
-					</div>
-				</div>
-				<p class="heart text-center"><i class="icon-heart2"></i></p>
-				<div class="couple-half">
-					<div class="bride">
-						<img src="images/bride.jpg" alt="невеста" class="img-responsive">
-					</div>
-					<div class="desc-bride">
-						<h3>Диана</h3>
-						<p>Прекрасная, нежная и веселая. Диана светит своей улыбкой окружающих и делает мир ярче. Она нашла свою вторую половинку в Владиславе.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
 
-	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Наши Особые События</span>
-					<h2>События Свадьбы</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Основная Церемония</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>16:00</span>
-										<span>18:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Июль 2027</span>
-										<span>Ташкент, Узбекистан</span>
-									</div>
-									<p>Торжественная церемония бракосочетания Владислава и Дианы. Мы будем благодарны за ваше присутствие в этот светлый день, когда две души сливаются в одно целое.</p>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Свадебный Праздник</h3>
-									<div class="event-col">
-										<i class="icon-clock"></i>
-										<span>19:00</span>
-										<span>02:00</span>
-									</div>
-									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Июль 2027</span>
-										<span>Ташкент, Узбекистан</span>
-									</div>
-									<p>Запоминающийся вечер с нашими самыми близкими и дорогими людьми. Музыка, танцы, смех и радость будут сопровождать нас всю ночь. Присоединяйтесь к празднованию!</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    .wc-ring {
+      margin: 0 auto;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      border: 1px solid rgba(196,144,107,.35);
+      display: flex; align-items: center; justify-content: center;
+      animation: fadeUp .9s ease both .35s;
+      position: relative;
+    }
 
-	<div id="fh5co-couple-story">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Мы Любим Друг Друга</span>
-					<h2>Наша История</h2>
-					<p>Историия двух сердец, которые нашли друг друга в этом огромном мире.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Первая Встреча</h3>
-									<span class="date">Осень 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p>Все начинается с одной встречи. Когда Владислав и Диана встретились в первый раз, они не подозревали, что это изменит их жизни навсегда. Взгляд, улыбка... и уже ничего не было как прежде.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Первое Свидание</h3>
-									<span class="date">Зима 2023</span>
-								</div>
-								<div class="timeline-body">
-									<p>Первое свидание - момент волнения и надежды. Каждое слово, каждый взгляд казался важным. В тот день родилось чувство, которое будет расти и развиваться с каждым днем.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Помолвка</h3>
-									<span class="date">Весна 2026</span>
-								</div>
-								<div class="timeline-body">
-									<p>Владислав спустился на одно колено и произнес священное слово "Да". Диана с радостью ответила согласием. Два человека стали два сердца с одной мечтой - провести жизнь вместе.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    .wc-ring::after {
+      content: '';
+      position: absolute; inset: 6px;
+      border-radius: 50%;
+      border: 1px solid rgba(196,144,107,.2);
+    }
 
-	<div id="fh5co-gallery" class="fh5co-section-gray">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Наши Воспоминания</span>
-					<h2>Галерея</h2>
-					<p>Моменты, которые сделали нас счастливыми</p>
-				</div>
-			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<ul id="fh5co-gallery-list">
+    .wc-ring-icon {
+      font-size: 36px;
+      animation: pulse 3s ease-in-out infinite;
+    }
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); ">
-						<a href="images/gallery-1.jpg">
-							<div class="case-studies-summary">
-								<span>Наши Фото</span>
-								<h2>Момент счастья</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								<span>Вместе</span>
-								<h2>На прогулке</h2>
-							</div>
-						</a>
-					</li>
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.08); }
+    }
 
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								<span>Природа</span>
-								<h2>Закат любви</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
-						<a href="#" class="color-4">
-							<div class="case-studies-summary">
-								<span>Радость</span>
-								<h2>Смех и веселье</h2>
-							</div>
-						</a>
-					</li>
+    /* ── SECTIONS ── */
+    .wc-section {
+      padding: 64px 24px;
+      max-width: 680px; margin: 0 auto;
+      text-align: center;
+    }
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
-							<a href="#" class="color-3">
-								<div class="case-studies-summary">
-									<span>Путешествие</span>
-									<h2>Новые горизонты</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<span>Портрет</span>
-									<h2>Два в одном</h2>
-								</div>
-							</a>
-						</li>
+    .wc-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 5vw, 38px);
+      font-weight: 300;
+      color: #3a2e26;
+      margin-bottom: 16px;
+    }
 
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+    .wc-section-sub {
+      font-size: 13px;
+      color: #8a7468;
+      line-height: 1.9;
+      max-width: 480px; margin: 0 auto 40px;
+    }
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
+    /* ── COUPLE CARDS ── */
+    .wc-couple {
+      display: flex; gap: 24px; flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
 
-								<span class="counter js-counter" data-from="0" data-to="150" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Ожидаемые Гости</span>
+    .wc-person {
+      flex: 1; min-width: 200px; max-width: 260px;
+      background: #fff8f2;
+      border: 1px solid rgba(196,144,107,.22);
+      border-radius: 16px;
+      padding: 32px 20px 28px;
+      position: relative;
+      overflow: hidden;
+      transition: transform .4s ease, box-shadow .4s ease;
+    }
 
-							</div>
-						</div>
-						<li class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Дней в ожидании</span>
-							</div>
-						</li>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-heart2"></i>
-								</span>
+    .wc-person::before {
+      content: '';
+      position: absolute; top: -40px; right: -40px;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(218,165,105,.12) 0%, transparent 70%);
+    }
 
-								<span class="counter js-counter" data-from="0" data-to="2" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Влюбленных сердца</span>
+    .wc-person:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(196,144,107,.15);
+    }
 
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-heart2"></i>
-								</span>
+    .wc-person-initial {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e8c9a0, #c4906b);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px; color: #fff; font-weight: 300;
+      margin: 0 auto 16px;
+    }
 
-								<span class="counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Любовь на всегда</span>
+    .wc-person-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px; font-weight: 400;
+      color: #3a2e26;
+      margin-bottom: 8px;
+    }
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    .wc-person-desc {
+      font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+      color: #b8896a;
+      line-height: 1.7;
+    }
 
-	<div id="fh5co-testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Лучшие Пожелания</span>
-						<h2>Пожелания Близких</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box">
-						<div class="wrap-testimony">
-							<div class="owl-carousel-fullwidth">
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-1.jpg" alt="user">
-										</figure>
-										<span>Мама Владислава</span>
-										<blockquote>
-											<p>"Я так счастлива видеть мужа моего сына воплотившимся. Диана - это дочь, которую я всегда хотела. Пусть ваша любовь растет и крепнет с каждым днем!"</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-2.jpg" alt="user">
-										</figure>
-										<span>Лучший друг</span>
-										<blockquote>
-											<p>"Владик, ты нашел свою вторую половинку! Я видел, как ты меня��шься с каждым днем, становишься счастливее. Дианочка, спасибо, что делаешь его таким!"</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure>
-										<span>Подруга Дианы</span>
-										<blockquote>
-											<p>"Дианочка, я не видела тебя такой счастливой никогда! Владислав идеально подходит к тебе. Счастья вам, долгой и преданной любви!"</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    /* ── DETAILS ── */
+    .wc-details {
+      background: #fff8f2;
+      border: 1px solid rgba(196,144,107,.2);
+      border-radius: 20px;
+      padding: 40px 32px;
+      margin-bottom: 40px;
+    }
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Вы Будете Присутствовать?</h2>
-					<p>Пожалуйста, заполните форму, чтобы подтвердить ваше участие. Спасибо.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">ФИО</label>
-								<input type="name" class="form-control" id="name" placeholder="Ваше ФИО">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Телефон</label>
-								<input type="email" class="form-control" id="email" placeholder="Ваш телефон">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Я Присутствую</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
+    .wc-detail-row {
+      display: flex; align-items: center; gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(196,144,107,.12);
+    }
 
-	<footer id="fh5co-footer" role="contentinfo">
-		<div class="container">
+    .wc-detail-row:last-child { border-bottom: none; }
 
-			<div class="row copyright">
-				<div class="col-md-12 text-center">
-					<p>
-						<small class="block">&copy; 2027 Свадьба Владислава и Дианы</small>
-						<small class="block">Разработано <a href="https://t.me/WebFlow_TC" target="_blank">TC Digital</a></small>
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://twitter.com/VVebstyle" target="_blank"><i class="icon-twitter"></i></a></li>
-							<li><a href="https://t.me/WebFlow_TC" target="_blank"><i class="icon-facebook"></i></a></li>
-							<li><a href="https://www.instagram.com/mannapov_ulugbek" target="_blank"><i class="icon-linkedin"></i></a></li>
-							<li><a href="tel:+998917773609"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
+    .wc-detail-icon {
+      width: 38px; height: 38px; flex-shrink: 0;
+      border-radius: 50%;
+      background: rgba(196,144,107,.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
 
-		</div>
-	</footer>
-	</div>
+    .wc-detail-label {
+      font-size: 10px; letter-spacing: .15em; text-transform: uppercase;
+      color: #b8896a; margin-bottom: 3px;
+    }
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
+    .wc-detail-value {
+      font-size: 15px; color: #3a2e26;
+    }
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+    /* ── TIMER ── */
+    .wc-timer {
+      display: flex; justify-content: center;
+      gap: clamp(12px, 3vw, 32px);
+      margin: 40px 0;
+    }
 
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+    .wc-timer-block { text-align: center; }
 
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
+    .wc-timer-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(40px, 8vw, 64px);
+      font-weight: 300;
+      color: #c4906b;
+      line-height: 1;
+      min-width: 2ch;
+      display: block;
+    }
 
-	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+    .wc-timer-label {
+      font-size: 9px; letter-spacing: .2em; text-transform: uppercase;
+      color: #a88870; margin-top: 6px;
+    }
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: 2027,
-        month: 7,
-        day: 15
-    });
+    .wc-timer-sep {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px; color: rgba(196,144,107,.4);
+      line-height: 1; align-self: flex-start; padding-top: 8px;
+    }
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: 2027,
-        month: 7,
-        day: 15,
-        enableUtc: false
-    });
-</script>
+    /* ── QUOTE ── */
+    .wc-quote {
+      padding: 48px 32px;
+      background: linear-gradient(135deg, #fdf0e8, #fdf8f3);
+      border-top: 1px solid rgba(196,144,107,.15);
+      border-bottom: 1px solid rgba(196,144,107,.15);
+    }
 
-	</body>
+    .wc-quote-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(20px, 3.5vw, 26px);
+      font-style: italic; font-weight: 300;
+      color: #5a4a3e;
+      line-height: 1.65;
+      max-width: 560px; margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    .wc-quote-attr {
+      font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+      color: #c4906b; text-align: center;
+    }
+
+    /* ── GALLERY ── */
+    .wc-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 680px; margin: 0 auto 8px;
+      padding: 0 24px;
+    }
+
+    .wc-gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      transition: transform .5s ease;
+    }
+
+    .wc-gallery-item:nth-child(2) { margin-top: 24px; }
+    .wc-gallery-item:nth-child(3) { margin-top: -12px; }
+    .wc-gallery-item:hover { transform: scale(1.03); }
+
+    .wc-gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: brightness(.97) saturate(.9) sepia(.08);
+      display: block;
+    }
+
+    /* ── BUTTON ── */
+    .wc-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 32px;
+      border: 1px solid rgba(196,144,107,.5);
+      border-radius: 50px;
+      color: #c4906b;
+      font-size: 12px; letter-spacing: .15em; text-transform: uppercase;
+      text-decoration: none;
+      transition: all .3s ease;
+      background: transparent;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .wc-btn:hover {
+      background: #c4906b; color: #fff;
+      border-color: #c4906b;
+    }
+
+    /* ── WISHES ── */
+    .wc-wishes-box {
+      background: #fff8f2;
+      border: 1px solid rgba(196,144,107,.2);
+      border-radius: 20px;
+      padding: 36px 28px;
+      text-align: center;
+    }
+
+    .wc-wishes-icon { font-size: 32px; margin-bottom: 16px; display: block; }
+
+    .wc-wishes-text {
+      font-size: 14px; color: #7a6558;
+      line-height: 1.8; margin-bottom: 28px;
+    }
+
+    /* ── FOOTER ── */
+    .wc-footer {
+      padding: 40px 24px;
+      text-align: center;
+      background: #3a2e26;
+      color: rgba(255,255,255,.6);
+      font-size: 11px; letter-spacing: .12em;
+    }
+
+    .wc-footer-names {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px; font-weight: 300; font-style: italic;
+      color: #e8c9a0; margin-bottom: 12px;
+      letter-spacing: .05em;
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <div class="wc-hero">
+    <div class="petals-top" id="petalsTop"></div>
+    <p class="wc-tag">Свадебное приглашение</p>
+    <div class="wc-ring">
+      <span class="wc-ring-icon">💍</span>
+    </div>
+    <div style="height:28px"></div>
+    <h1 class="wc-names">
+      Влад
+      <span class="amp">&amp;</span>
+      Диана
+    </h1>
+    <div class="wc-divider"></div>
+    <p class="wc-date">Четверг · 09 сентября 2027 · Ташкент</p>
+  </div>
+
+  <!-- Invite -->
+  <div class="wc-section reveal">
+    <p class="wc-section-title">С честью приглашаем Вас</p>
+    <p class="wc-section-sub">
+      С большой радостью и любовью приглашаем Вас разделить с нами
+      один из самых счастливых дней в нашей жизни —
+      торжественную церемонию бракосочетания.
+    </p>
+
+    <div class="wc-couple">
+      <div class="wc-person">
+        <div class="wc-person-initial">В</div>
+        <p class="wc-person-name">Владимир Сергеевич</p>
+        <p class="wc-person-desc">
+          Старший сын<br>
+          Сергея Викторовича и Марии Ивановны<br>
+          г. Москва
+        </p>
+      </div>
+      <div class="wc-person">
+        <div class="wc-person-initial">Д</div>
+        <p class="wc-person-name">Диана Александровна</p>
+        <p class="wc-person-desc">
+          Старшая дочь<br>
+          Александра Петровича и Елены Михайловны<br>
+          г. Санкт-Петербург
+        </p>
+      </div>
+    </div>
+
+    <div class="wc-details">
+      <div class="wc-detail-row">
+        <div class="wc-detail-icon">📅</div>
+        <div>
+          <p class="wc-detail-label">Дата</p>
+          <p class="wc-detail-value">Четверг, 09 сентября 2027</p>
+        </div>
+      </div>
+      <div class="wc-detail-row">
+        <div class="wc-detail-icon">⏰</div>
+        <div>
+          <p class="wc-detail-label">Время</p>
+          <p class="wc-detail-value">15:00 — 19:00</p>
+        </div>
+      </div>
+      <div class="wc-detail-row">
+        <div class="wc-detail-icon">📍</div>
+        <div>
+          <p class="wc-detail-label">Место</p>
+          <p class="wc-detail-value">Ташкент, Узбекистан</p>
+        </div>
+      </div>
+      <div class="wc-detail-row">
+        <div class="wc-detail-icon">👔</div>
+        <div>
+          <p class="wc-detail-label">Дресс-код</p>
+          <p class="wc-detail-value">Формальная одежда</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://www.google.com/maps/search/Ташкент" class="wc-btn">📍 Посмотреть на карте</a>
+  </div>
+
+  <!-- Countdown -->
+  <div class="wc-section reveal" style="padding-top:0;">
+    <p style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#b8896a;margin-bottom:12px;">До торжества</p>
+    <div class="wc-timer">
+      <div class="wc-timer-block">
+        <span class="wc-timer-num" id="t-days">00</span>
+        <p class="wc-timer-label">дней</p>
+      </div>
+      <div class="wc-timer-sep">·</div>
+      <div class="wc-timer-block">
+        <span class="wc-timer-num" id="t-hrs">00</span>
+        <p class="wc-timer-label">часов</p>
+      </div>
+      <div class="wc-timer-sep">·</div>
+      <div class="wc-timer-block">
+        <span class="wc-timer-num" id="t-min">00</span>
+        <p class="wc-timer-label">минут</p>
+      </div>
+      <div class="wc-timer-sep">·</div>
+      <div class="wc-timer-block">
+        <span class="wc-timer-num" id="t-sec">00</span>
+        <p class="wc-timer-label">секунд</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quote -->
+  <div class="wc-quote reveal">
+    <p class="wc-quote-text">
+      «Брак — это союз двух сердец, скреплённый клятвой верности и любви.»
+    </p>
+    <p class="wc-quote-attr">— Влад &amp; Диана</p>
+  </div>
+
+  <!-- Gallery -->
+  <div class="wc-section reveal">
+    <p class="wc-section-title">Наши моменты</p>
+  </div>
+  <div class="wc-gallery">
+    <!-- Замените src на путь к реальным фото -->
+    <div class="wc-gallery-item" style="background:linear-gradient(135deg,#e8d5c0,#c9a882);display:flex;align-items:center;justify-content:center;font-size:40px;">🌸</div>
+    <div class="wc-gallery-item" style="background:linear-gradient(135deg,#f0dfd0,#d4a87a);display:flex;align-items:center;justify-content:center;font-size:40px;">💐</div>
+    <div class="wc-gallery-item" style="background:linear-gradient(135deg,#e4cebe,#b8876a);display:flex;align-items:center;justify-content:center;font-size:40px;">🕊️</div>
+  </div>
+  <div style="text-align:center;padding:12px 0 40px;font-size:11px;color:#b8896a;letter-spacing:.1em;">
+    Замените плейсхолдеры на настоящие фото 💕
+  </div>
+
+  <!-- Wishes -->
+  <div class="wc-section reveal">
+    <p class="wc-section-title">Пожелания</p>
+    <div class="wc-wishes-box">
+      <span class="wc-wishes-icon">💌</span>
+      <p class="wc-wishes-text">
+        Ваши добрые пожелания — это самый дорогой подарок для нас.<br>
+        Напишите нам в Telegram — мы сохраним каждое тёплое слово.
+      </p>
+      <a href="https://t.me/VVebstyle" class="wc-btn">Написать поздравление</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="wc-footer">
+    <p class="wc-footer-names">Влад &amp; Диана</p>
+    <p>09 сентября 2027 · Ташкент, Узбекистан</p>
+    <p style="margin-top:12px;opacity:.45;">Создано с ♡ · TC Digital</p>
+  </div>
+
+  <script>
+    /* ── Falling petals ── */
+    const container = document.getElementById('petalsTop');
+    const colors = ['#f5c5b8','#e8b4c8','#f0d4c0','#ddc0d8','#f7d9c4'];
+    for (let i = 0; i < 18; i++) {
+      const p = document.createElement('div');
+      p.className = 'petal';
+      p.style.cssText = `
+        left:${Math.random()*100}%;
+        background:${colors[i % colors.length]};
+        animation-duration:${3.5 + Math.random()*4}s;
+        animation-delay:${Math.random()*5}s;
+        width:${8+Math.random()*8}px;
+        height:${12+Math.random()*10}px;
+        border-radius:${Math.random()>.5?'50% 50% 50% 0':'50% 0 50% 50%'};
+        transform:rotate(${Math.random()*60-30}deg);
+      `;
+      container.appendChild(p);
+    }
+
+    /* ── Countdown ── */
+    function pad(n){ return String(n).padStart(2,'0'); }
+    function tick(){
+      const diff = new Date('2027-09-09T15:00:00') - new Date();
+      if (diff <= 0) {
+        ['t-days','t-hrs','t-min','t-sec'].forEach(id => document.getElementById(id).textContent = '00');
+        return;
+      }
+      const vals = [
+        Math.floor(diff / 86400000),
+        Math.floor((diff % 86400000) / 3600000),
+        Math.floor((diff % 3600000) / 60000),
+        Math.floor((diff % 60000) / 1000)
+      ];
+      ['t-days','t-hrs','t-min','t-sec'].forEach((id, i) => {
+        const el = document.getElementById(id);
+        const v = pad(vals[i]);
+        if (el.textContent !== v) {
+          el.textContent = v;
+          el.style.animation = 'none';
+          void el.offsetWidth;
+          el.style.animation = 'countPop .4s ease';
+        }
+      });
+    }
+
+    /* countPop keyframe via JS since it's not in main stylesheet */
+    const st = document.createElement('style');
+    st.textContent = '@keyframes countPop { 0%{transform:scale(1.15)} 100%{transform:scale(1)} }';
+    document.head.appendChild(st);
+
+    tick();
+    setInterval(tick, 1000);
+
+    /* ── Scroll reveal ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+
+</body>
 </html>
